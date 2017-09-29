@@ -1,1 +1,88 @@
 /* CSS declarations go here */
+body {
+
+}
+
+.container {
+
+}
+
+header {
+
+}
+
+#login-buttons {
+
+}
+
+h1 {
+
+}
+
+form {
+
+}
+
+.new-task input {
+
+}
+
+.new-task input:focus {
+
+}
+
+ul {
+
+}
+
+.delete {
+
+}
+
+li {
+
+}
+
+/*?*/
+li .text {
+
+}
+
+li.checked {
+
+}
+
+li.checked .text {
+
+}
+
+li.private {
+
+}
+
+header .hide-completed {
+
+}
+
+.toggle-private {
+
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+
+  .search {
+    width: 150px;
+    clear: both;
+  }
+
+  .new-task input {
+    
+  }
+}
+
+ul {
+
+}
