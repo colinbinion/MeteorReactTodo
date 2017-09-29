@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data';
 
 import{ Tasks } from '../api/tasks.js'
@@ -13,7 +13,7 @@ class App extends Component {
     event.preventDefault();
 
     //finds the text field via react ref
-    const text = ReactDom.findDOMNode(this.refs.textInput).value.trim();
+    const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
 
     Tasks.insert({
       text,
@@ -21,7 +21,7 @@ class App extends Component {
     });
 
     //clear form
-    ReactDom.findDOMNode(this.refs.textInput).value = '';
+    ReactDOM.findDOMNode(this.refs.textInput).value = '';
   }
 
   renderTasks() {
@@ -40,7 +40,7 @@ class App extends Component {
             <input
               type="text"
               ref="textInput"
-              placeholder="Type new tasks"
+              placeholder="Type new tasks here"
             />
           </form>
         </header>
